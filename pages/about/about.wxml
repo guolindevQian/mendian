@@ -1,0 +1,39 @@
+<view class="navbar">
+<scroll-view scroll-x="true" scroll-left="{{scrollLeft}}"style='width: 100%; white-space:nowrap; '>
+  <text wx:for="{{navbar}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </scroll-view>
+</view>
+<view hidden="{{currentTab!==0}}">
+  <view>
+    <image src='../../image/lunbo.jpg'style="width:100%;height:400rpx;"></image>
+  </view>
+
+ <view style=' font-size:35rpx;background:white;'>
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>我们大胆创新、积极进取、独特设计、先进的机械设备、精良的工艺、诚实的品格、完善的售后服务，这就是本企业打造卓越精品衣柜门的魅力所在。
+ </view>
+ <view style=' font-size:35rpx;background:white;margin-bottom:20rpx;'>
+   <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> 我们愿与每一位合作伙伴携手共进，共创美好的明天，愿与每一位百姓用户共同创造高雅时尚、温馨和谐的居家生活和人文环境，不断提升产品的技术含量，追求家居绿色环保、设计艺术唯美、功能实用与人性化完美结合。
+ </view>
+</view>
+<view hidden="{{currentTab!==1}}">
+<view>
+  <image src='../../image/gongsitubiao.jpg' style=" width:100%;height:350rpx;"></image>
+</view>
+<view style='font-size:35rpx;margin-bottom:20rpx;background:white;text-align:center;padding:30rpx;'>
+  <view>电话：{{mobilephone}}</view>
+  <view>邮箱：{{email}}</view>
+  <view bindtap='click'>
+  <view><image src='../../icon/shouhuodizhi.png' style='width:40rpx;height:40rpx;float:left;'></image> </view>
+  地址：{{dizhi}}
+  </view>
+</view>
+</view>
+
+<view style='font-size:30rpx;text-align:center;background:white;padding:20rpx;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>由深圳信诚天下电子商务有限公司提供技术支持</text>
+</view>
+
+<view>
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>

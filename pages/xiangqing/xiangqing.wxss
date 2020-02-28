@@ -1,0 +1,12 @@
+page{
+  background: whitesmoke
+}
+
+.img-plus-style1 {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 130rpx;  
+  right: 30rpx;   
+  opacity: 0.7
+}  

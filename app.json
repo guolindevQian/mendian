@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/about/about",
+    "pages/xiangqing/xiangqing",
+    "pages/liuyan/liuyan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "门店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/home.png",
+      "selectedIconPath": "icon/home-select.png"
+    },
+    {
+      "pagePath": "pages/product/product",
+      "text": "产品",
+      "iconPath": "icon/classification.png",
+      "selectedIconPath": "icon/classification-select.png"
+    },
+    
+    {
+      "pagePath": "pages/about/about",
+      "text": "公司",
+      "iconPath": "icon/gongsi.png",
+      "selectedIconPath": "icon/gongsiselect.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

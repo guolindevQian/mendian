@@ -1,0 +1,178 @@
+<view class="navbar">
+<scroll-view scroll-x="true" scroll-left="{{scrollLeft}}"style='width: 100%; white-space:nowrap; '>
+  <text wx:for="{{navbar}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </scroll-view>
+</view>
+<view hidden="{{currentTab!==0}}">
+  <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      时尚混搭系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{shishangjianjie}}
+    </view>
+  </view>
+ <view wx:for="{{shishanghunda}}" wx:key="item" data-index='{{index}}'class='h1' bindtap='toxiangqing' data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+<view hidden="{{currentTab!==1}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      后现代系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{houxiandaijianjie}}
+    </view>
+  </view>
+ <view wx:for="{{houxiandai}}" wx:key="item" data-index='{{index}}'class='h1' bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+<view hidden="{{currentTab!==2}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      新中式系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{xinzhongshijianjie}}
+    </view>
+  </view>
+ <view wx:for="{{xinzhongshi}}" wx:key="item" data-index='{{index}}'class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+<view hidden="{{currentTab!==3}}">
+  <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      现代系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{xiandaijianjie}}
+    </view>
+  </view>
+<view wx:for="{{xiandai}}" wx:key="item" data-index='{{index}}'class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+<view hidden="{{currentTab!==4}}">
+   <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      简欧系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{jianoujianjie}}
+    </view>
+  </view>
+ <view wx:for="{{jianou}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+<view hidden="{{currentTab!==5}}">
+   <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      欧式系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{oushijianjie}}
+    </view>
+  </view>
+ <view wx:for="{{oushi}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+
+<view hidden="{{currentTab!==6}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      中式系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{zhongshijianjie}}
+    </view>
+  </view>
+ <view wx:for="{{zhongshi}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+
+<view hidden="{{currentTab!==7}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      美式系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{meishijianjie}}
+    </view>
+  </view>
+ <view wx:for="{{meishi}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+
+<view hidden="{{currentTab!==8}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      移门系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> 
+    </view>
+  </view>
+ <view wx:for="{{yimen}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+
+<view hidden="{{currentTab!==9}}">
+ <view style='background:white;padding:20rpx;'>
+    <view style='border-bottom: 3rpx solid whitesmoke;margin-bottom:20rpx;'>
+      材料系列
+    </view>
+    <view class='h2'>
+     <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> 
+    </view>
+  </view>
+ <view wx:for="{{cailiao}}" wx:key="item" data-index='{{index}}' class='h1'bindtap='toxiangqing'data-xiang='{{item}}'>
+  <view class='h0'>
+    <image src='{{item.url}}' style='width:100%;height:450rpx;'></image>
+  </view>
+  <view>{{item.name}}</view>
+ </view>
+</view>
+
+<view style='font-size:30rpx;text-align:center;background:white;padding:20rpx;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>由深圳信诚天下电子商务有限公司提供技术支持</text>
+</view>
+
+<view>
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>
